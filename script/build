@@ -2,4 +2,5 @@
 
 cd "$(dirname "$0")/.."
 
+[[ ! -d build ]] && mkdir build
 GOOS=linux GOARCH=amd64 go build -o build/snswebhook main.go
