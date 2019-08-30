@@ -65,6 +65,7 @@ func (h *EventHandler) Notification(ctx context.Context, event *snshttp.Notifica
 		os.Stderr.WriteString(err.Error())
 	}
 	fmt.Println(string(output))
+	fmt.Println("Received a Notification and executed r10k with exit code 0")
 
 	return nil
 }
